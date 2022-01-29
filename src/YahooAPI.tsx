@@ -13,13 +13,7 @@ export interface Position {
 }
 
 const Yahoo = () => {
-  const [positions, setPositions] = useState<Position["positions"]>([{
-    name: "Fake",
-    sector: "Tech",
-    country: "USA",
-    state: "CA",
-    longBusinessSummary: "feouwhfew"
-  }])
+  const [positions, setPositions] = useState<Position["positions"]>([])
 
   return (
   <div>

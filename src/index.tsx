@@ -5,7 +5,7 @@ import Yahoo from "./YahooAPI"
 
 
 ReactDOM.render(
-    <Yahoo />,
+    <App />,
   document.getElementById('root')
 );
 
