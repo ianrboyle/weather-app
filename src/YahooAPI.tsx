@@ -1,6 +1,6 @@
 import React, {useState, ChangeEvent, useEffect} from 'react';
 import axios from "axios"
-import CompanyInfo from './CompanyInfo';
+import PositionsList from './PositionsList';
 
 export interface Position {
   positions: {
@@ -48,7 +48,7 @@ const Yahoo = () => {
   <div>
     <button onClick={getStockInfo}>Click</button>
     {/* {positions?.map((p) => {return p.sector})} */}
-    <CompanyInfo positions={positions}/>
+    <PositionsList positions={positions}/>
   </div> )
 }
 

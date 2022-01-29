@@ -10,7 +10,7 @@ interface Props {
   }[]
 }
 
-const CompanyInfo: React.FC<Props> = ({positions}) => {
+const PositionsList: React.FC<Props> = ({positions}) => {
 
   const renderCompanies = (): JSX.Element[] => {
     return positions.map((position, i) => {
@@ -32,4 +32,4 @@ const CompanyInfo: React.FC<Props> = ({positions}) => {
 }
 
 
-export default CompanyInfo;
+export default PositionsList;
