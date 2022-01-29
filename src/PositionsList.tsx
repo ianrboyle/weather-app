@@ -1,14 +1,6 @@
 import React from "react"
+import {Position as Props} from "./YahooAPI"
 
-
-interface Props {
-  positions: {
-    sector: string,
-    country: string,
-    state: string,
-    longBusinessSummary: string
-  }[]
-}
 
 const PositionsList: React.FC<Props> = ({positions}) => {
 
@@ -17,6 +9,8 @@ const PositionsList: React.FC<Props> = ({positions}) => {
       return (
         <li key={i}>
           <div>
+            <h1>{position.name}</h1>
+            <p>{position.longBusinessSummary.substring(0,250)}...</p>
             <p>{position.sector}</p>
           </div>
       </li>
